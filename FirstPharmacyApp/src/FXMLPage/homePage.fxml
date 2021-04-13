@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="otherpage.HomeController">
+   <children>
+      <AnchorPane prefHeight="433.0" prefWidth="796.0" style="-fx-background-color: #fafafa;">
+         <children>
+            <AnchorPane layoutY="44.0" prefHeight="17.0" prefWidth="796.0" styleClass="sub-header" stylesheets="@CssFile/style.css" />
+            <AnchorPane prefHeight="53.0" prefWidth="796.0" styleClass="linear-grad" stylesheets="@CssFile/style.css">
+               <children>
+                  <ImageView fitHeight="52.0" fitWidth="159.0" layoutX="14.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/logo/pharmacy-logo.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="741.0" layoutY="14.0" mnemonicParsing="false" onAction="#closeButtonAction" prefHeight="25.0" prefWidth="25.0" styleClass="header-button-exit">
+                     <graphic>
+                        <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/icon/close.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="414.0" layoutY="11.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="94.0" style="-fx-font-style: strong;" styleClass="header-button" text="Anasayfa">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="518.0" layoutY="11.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="94.0" style="-fx-font-style: strong;" styleClass="header-button" text="Blog">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="624.0" layoutY="11.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="94.0" style="-fx-font-style: strong;" styleClass="header-button" text="İletişim">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="14.0" layoutY="73.0" prefHeight="338.0" prefWidth="113.0">
+               <children>
+                  <Button alignment="BOTTOM_CENTER" mnemonicParsing="false" onAction="#pharmacologyButtonAction" prefHeight="59.0" prefWidth="113.0" styleClass="pharmacy-button" stylesheets="@CssFile/style.css" text="Farmakoloji" textAlignment="CENTER">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="45.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/icon/pharmacology.png" />
+                     </image>
+                  </ImageView>
+                  <Button alignment="BOTTOM_CENTER" layoutY="66.0" mnemonicParsing="false" onAction="#addMedicineButtonAction" prefHeight="59.0" prefWidth="113.0" styleClass="pharmacy-button" stylesheets="@CssFile/style.css" text="İlaç Ekle" textAlignment="CENTER">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitWidth="20.0" layoutX="45.0" layoutY="76.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/icon/plus.png" />
+                     </image>
+                  </ImageView>
+                  <Button alignment="BOTTOM_CENTER" layoutY="132.0" mnemonicParsing="false" onAction="#searchMedicineButtonAction" prefHeight="59.0" prefWidth="113.0" styleClass="pharmacy-button" stylesheets="@CssFile/style.css" text="İlaç Sorgula" textAlignment="CENTER">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="18.0" fitWidth="18.0" layoutX="46.0" layoutY="144.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/icon/search.png" />
+                     </image>
+                  </ImageView>
+                  <Button alignment="BOTTOM_CENTER" layoutY="203.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="113.0" styleClass="pharmacy-button" stylesheets="@CssFile/style.css" text="Demo Page" textAlignment="CENTER">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="45.0" layoutY="213.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/icon/demo.png" />
+                     </image>
+                  </ImageView>
+                  <Button alignment="BOTTOM_CENTER" layoutY="272.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="113.0" styleClass="pharmacy-button" stylesheets="@CssFile/style.css" text="Version: 0.01" textAlignment="CENTER">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="45.0" layoutY="279.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/icon/version.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <BarChart fx:id="demoChart" layoutX="127.0" layoutY="207.0" prefHeight="230.0" prefWidth="647.0">
+              <xAxis>
+                <CategoryAxis label="Demo Sales" side="BOTTOM" tickLabelFill="#431fa0" fx:id="xTable">
+                     <tickLabelFont>
+                        <Font size="10.0" />
+                     </tickLabelFont>
+                  </CategoryAxis>
+              </xAxis>
+              <yAxis>
+                <NumberAxis fx:id="yTable" label="Demo Number" tickLabelFill="#431fa0">
+                     <tickLabelFont>
+                        <Font name="System Bold" size="10.0" />
+                     </tickLabelFont>
+                  </NumberAxis>
+              </yAxis>
+            </BarChart>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="145.0" layoutY="84.0" prefHeight="109.0" prefWidth="647.0">
+         <children>
+            <ImageView fitHeight="137.0" fitWidth="658.0" layoutX="-11.0" layoutY="-15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/other/istatistik.png" />
+               </image>
+            </ImageView>
+            <Button alignment="BOTTOM_CENTER" layoutX="66.0" layoutY="3.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" styleClass="pharmacy-button" stylesheets="@CssFile/style.css" text="Kayıtlı Üye" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Label fx:id="registerMemberCount" layoutX="104.0" layoutY="61.0" text="800" textFill="#fafafa">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="100.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icon/account.png" />
+               </image>
+            </ImageView>
+            <Button alignment="BOTTOM_CENTER" layoutX="177.0" layoutY="3.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" styleClass="pharmacy-button" stylesheets="@CssFile/style.css" text="İlaç Bilgisi" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Label fx:id="medicineCount" layoutX="215.0" layoutY="61.0" text="247" textFill="#fafafa">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="212.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icon/medicine.png" />
+               </image>
+            </ImageView>
+            <Button alignment="BOTTOM_CENTER" layoutX="288.0" layoutY="3.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" styleClass="pharmacy-button" stylesheets="@CssFile/style.css" text="Moderatör" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Label fx:id="moderatorLabel" layoutX="334.0" layoutY="61.0" text="5" textFill="#fafafa">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="323.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icon/moderator.png" />
+               </image>
+            </ImageView>
+            <Button alignment="BOTTOM_CENTER" layoutX="399.0" layoutY="3.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" styleClass="pharmacy-button" stylesheets="@CssFile/style.css" text="DEMO" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Label layoutX="431.0" layoutY="61.0" text="NULL" textFill="#fafafa">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="433.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icon/null.png" />
+               </image>
+            </ImageView>
+            <Button alignment="BOTTOM_CENTER" layoutX="509.0" layoutY="3.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" styleClass="pharmacy-button" stylesheets="@CssFile/style.css" text="DEMO" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Label layoutX="541.0" layoutY="61.0" text="NULL" textFill="#fafafa">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="543.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icon/null.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

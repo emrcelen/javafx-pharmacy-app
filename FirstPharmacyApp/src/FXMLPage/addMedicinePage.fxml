@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="otherpage.AddMedicineController">
+    <children>
+        <AnchorPane prefHeight="433.0" prefWidth="796.0" style="-fx-background-color: #fafafa;">
+            <children>
+                <AnchorPane layoutY="44.0" prefHeight="17.0" prefWidth="796.0" styleClass="sub-header" stylesheets="@CssFile/style.css" />
+                <AnchorPane prefHeight="53.0" prefWidth="796.0" styleClass="linear-grad" stylesheets="@CssFile/style.css">
+                    <children>
+                        <ImageView fitHeight="52.0" fitWidth="159.0" layoutX="14.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../assets/logo/pharmacy-logo.png" />
+                            </image>
+                        </ImageView>
+                        <Button layoutX="741.0" layoutY="14.0" mnemonicParsing="false" onAction="#closeButtonAction" prefHeight="25.0" prefWidth="25.0" styleClass="header-button-exit">
+                            <graphic>
+                                <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../assets/icon/close.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                        <Button layoutX="414.0" layoutY="11.0" mnemonicParsing="false" onAction="#homePageButtonAction" prefHeight="32.0" prefWidth="94.0" style="-fx-font-style: strong;" styleClass="header-button" text="Anasayfa">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Button>
+                        <Button layoutX="518.0" layoutY="11.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="94.0" style="-fx-font-style: strong;" styleClass="header-button" text="Blog">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Button>
+                        <Button layoutX="624.0" layoutY="11.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="94.0" style="-fx-font-style: strong;" styleClass="header-button" text="İletişim">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </AnchorPane>
+                <AnchorPane layoutX="14.0" layoutY="73.0" prefHeight="338.0" prefWidth="113.0">
+                    <children>
+                        <Button alignment="BOTTOM_CENTER" mnemonicParsing="false" onAction="#pharmacologyButtonAction" prefHeight="59.0" prefWidth="113.0" styleClass="pharmacy-button" stylesheets="@CssFile/style.css" text="Farmakoloji" textAlignment="CENTER">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Button>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="45.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../assets/icon/pharmacology.png" />
+                            </image>
+                        </ImageView>
+                        <Button alignment="BOTTOM_CENTER" layoutY="66.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="113.0" style="-fx-background-color: #1c1c1c;" styleClass="pharmacy-button" stylesheets="@CssFile/style.css" text="İlaç Ekle" textAlignment="CENTER">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Button>
+                        <ImageView fitWidth="20.0" layoutX="45.0" layoutY="76.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../assets/icon/plus.png" />
+                            </image>
+                        </ImageView>
+                        <Button alignment="BOTTOM_CENTER" layoutY="132.0" mnemonicParsing="false" onAction="#searchMedicineButtonAction" prefHeight="59.0" prefWidth="113.0" styleClass="pharmacy-button" stylesheets="@CssFile/style.css" text="İlaç Sorgula" textAlignment="CENTER">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Button>
+                        <ImageView fitHeight="18.0" fitWidth="18.0" layoutX="46.0" layoutY="144.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../assets/icon/search.png" />
+                            </image>
+                        </ImageView>
+                        <Button alignment="BOTTOM_CENTER" layoutY="203.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="113.0" styleClass="pharmacy-button" stylesheets="@CssFile/style.css" text="Demo Page" textAlignment="CENTER">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Button>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="45.0" layoutY="213.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../assets/icon/demo.png" />
+                            </image>
+                        </ImageView>
+                        <Button alignment="BOTTOM_CENTER" layoutY="272.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="113.0" styleClass="pharmacy-button" stylesheets="@CssFile/style.css" text="Version: 0.01" textAlignment="CENTER">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Button>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="45.0" layoutY="279.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../assets/icon/version.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </AnchorPane>
+            <ImageView fitHeight="170.0" fitWidth="314.0" layoutX="136.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/other/bilgiler.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="medicineName" alignment="CENTER_RIGHT" layoutX="150.0" layoutY="115.0" prefHeight="32.0" prefWidth="113.0" promptText="İlaç İsmi">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="medicineMoney" alignment="CENTER_RIGHT" layoutX="275.0" layoutY="115.0" prefHeight="32.0" prefWidth="113.0" promptText="İlaç Fiyatı">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="medicineCode" alignment="CENTER_RIGHT" layoutX="150.0" layoutY="155.0" prefHeight="32.0" prefWidth="237.0" promptText="Sistem Kayıt Numarası">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="153.0" layoutY="119.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icon/medicineName.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="279.0" layoutY="118.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icon/turkish-lira.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="155.0" layoutY="160.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icon/qr-code.png" />
+               </image>
+            </ImageView>
+            <Button alignment="CENTER" contentDisplay="CENTER" layoutX="150.0" layoutY="195.0" mnemonicParsing="false" onAction="#createCodeButtonAction" prefHeight="32.0" prefWidth="237.0" styleClass="pharmacy-button" stylesheets="@CssFile/style.css" text="Kayıt Numarası Oluştur" textAlignment="CENTER" />
+            <ImageView fitHeight="170.0" fitWidth="268.0" layoutX="136.0" layoutY="240.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/other/ilac-ureticisi.png" />
+               </image>
+            </ImageView>
+            <JFXComboBox fx:id="selectCompanyComboBox" focusColor="#431fa0" labelFloat="true" layoutX="150.0" layoutY="287.0" prefHeight="32.0" prefWidth="113.0" promptText="İlaç Üreticisi Seç" stylesheets="@CssFile/style.css" unFocusColor="#6f4cbb" />
+            <TextField fx:id="companyName" alignment="CENTER_RIGHT" layoutX="150.0" layoutY="325.0" prefHeight="32.0" prefWidth="113.0" promptText="Üretici İsmi">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="totalMedicineCount" alignment="CENTER_RIGHT" layoutX="275.0" layoutY="325.0" prefHeight="32.0" prefWidth="113.0" promptText="Toplam İlacı">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="companyCode" alignment="CENTER_RIGHT" layoutX="150.0" layoutY="364.0" prefHeight="32.0" prefWidth="237.0" promptText="Üretici Kayıt Numarası">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="153.0" layoutY="330.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icon/company.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="278.0" layoutY="329.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icon/statistic.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="155.0" layoutY="369.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icon/qr-code.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="345.0" fitWidth="400.0" layoutX="401.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/other/diger-bilgiler.png" />
+               </image>
+            </ImageView>
+            <TextArea fx:id="medicineAbout" layoutX="414.0" layoutY="169.0" prefHeight="189.0" prefWidth="362.0" promptText="İlaç Hakkında Açıklama Yazın." wrapText="true" />
+            <JFXComboBox fx:id="selectMedicineComboBox" focusColor="#431fa0" labelFloat="true" layoutX="414.0" layoutY="128.0" prefHeight="32.0" prefWidth="362.0" promptText="İlaç Türünü Seç" unFocusColor="#6f4cbb" />
+            <Button alignment="CENTER" contentDisplay="CENTER" layoutX="414.0" layoutY="363.0" mnemonicParsing="false" onAction="#insertButtonAction" prefHeight="32.0" prefWidth="362.0" styleClass="pharmacy-button" stylesheets="@CssFile/style.css" text="İlaç ekle" textAlignment="CENTER" />
+            <Button alignment="CENTER" contentDisplay="CENTER" layoutX="277.0" layoutY="286.0" mnemonicParsing="false" onAction="#selectCompanyButtonAction" prefHeight="32.0" prefWidth="113.0" styleClass="pharmacy-button" stylesheets="@CssFile/style.css" text="Üreticiyi Seç" textAlignment="CENTER" />
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

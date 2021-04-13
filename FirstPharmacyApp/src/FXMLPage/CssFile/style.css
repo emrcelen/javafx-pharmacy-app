@@ -1,0 +1,92 @@
+.version{
+-fx-background-color: #431FA0;
+-fx-text-fill:#fafafa;
+}
+.version:hover{
+-fx-font-size:15px;
+-fx-font-style: bold;
+}
+.left-pane{
+-fx-background-color: #fafafa;
+}
+.text-gradient{
+-fx-text-fill:linear-gradient(to bottom left,#6F4CBB,#431FA0);
+}
+.linear-grad{
+-fx-background-color: linear-gradient(to bottom left,#6F4CBB,#431FA0);
+}
+.loginbutton{
+-fx-background-color: #431FA0;
+-fx-text-fill: #fafafa;
+}
+.loginbutton:hover{
+-fx-background-color:#5430a1;
+}
+.loginbutton:pressed{
+-fx-text-fill:#371897;
+}
+.loginbutton.active{
+-fx-text-fill:#80AFF5;
+}
+
+.registerbutton{
+-fx-text-fill: #fafafa;
+-fx-background-color:#1fa034;
+}
+.registerbutton:hover{
+-fx-background-color:#22bf3c;
+}
+
+.exitbutton{
+-fx-background-color: #431FA0;
+}
+.exitbutton:hover{
+-fx-background-color:#e63733;
+}
+
+.back-button{
+-fx-background-color:#eae6e6;
+
+}
+.back-button:hover{
+-fx-background-color:#dedcdc;
+}
+.back-button:pressed{
+-fx-background-color:#c9c5c5;
+}
+.sub-header{
+-fx-background-color:linear-gradient(to bottom left,#3d3d3d,#1c1c1c);
+}
+.header-button{
+-fx-background-color:#6F4CBB;
+-fx-background-radius: 28px;
+-fx-text-fill:#fafafa;
+}
+.header-button:hover{
+
+-fx-background-radius:14px;
+}
+.header-button:pressed{
+-fx-background-color:#431FA0;
+-fx-background-radius:6px;
+}
+.header-button-exit{
+-fx-background-color:#431FA0;
+-fx-background-radius: 16px;
+}
+.header-button-exit:hover{
+-fx-background-radius:7px;
+-fx-background-color: #e63733;
+}
+.header-button-exit:pressed{
+-fx-background-radius:3px;
+}
+.pharmacy-button{
+-fx-text-fill:#fafafa;
+-fx-font-size:14px;
+-fx-background-color:#431FA0;
+}
+.pharmacy-button:hover{
+-fx-font-size:15px;
+-fx-background-color:#1c1c1c;
+}
